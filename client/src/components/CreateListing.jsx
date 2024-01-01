@@ -708,7 +708,7 @@ export default function CreateListing() {
           <button
             type="button"
             onClick={handleNextStep}
-            className={`py-3 w-[130px] bg-lightblue -z-10 text-white rounded-lg  hover:opacity-95 ${
+            className={`py-3 w-[130px] bg-lightblue text-white rounded-lg hover:opacity-95 ${
               isNextButtonDisabled ? "opacity-80 cursor-not-allowed" : ""
             }`}
             disabled={isNextButtonDisabled}
