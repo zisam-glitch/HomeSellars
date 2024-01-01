@@ -48,10 +48,7 @@ export default function Header() {
                 <span className="text-darkblue">Demi</span>
                 <span className="text-lightblue">Sellars</span>
               </h1>
-              <h1 className="font-bold text-6xl md:text-5xl flex flex-wrap px-4 py-2 bg-purple rounded-md m-20">
-                <span className="text-darkblue">D</span>
-                <span className="text-lightblue">S</span>
-              </h1>
+              
             </Link>
             <div>
               <MobileNav />
