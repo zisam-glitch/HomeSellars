@@ -122,7 +122,7 @@ export default function Header() {
                         <span>Account</span>
                         <span>
                           <img
-                            className="w-8 h-8 rounded-full"
+                            className="w-8 object-cover h-8 rounded-full"
                             src={currentUser.avatar}
                             alt=""
                           />

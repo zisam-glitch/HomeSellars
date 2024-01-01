@@ -47,7 +47,7 @@ export default function SignIn() {
     <div className='w-full h-screen md:p-20 px-6 py-10 grid items-center'>
       <Link to='/'>
         <h1 className='font-bold text-2xl  flex flex-wrap'>
-          <span className='text-darkblue'>Home</span>
+          <span className='text-darkblue'>Demi</span>
           <span className='text-lightblue'>Sellars</span>
         </h1>
       </Link>
