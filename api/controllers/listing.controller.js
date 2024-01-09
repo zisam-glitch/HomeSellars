@@ -108,29 +108,34 @@ export const getListings = async (req, res, next) => {
     }
 
     const searchTermWithCommas = req.query.searchTerm || "";
-    
+
     // Remove commas from the search term
     const searchTerm = searchTermWithCommas.replace(/,/g, '');
 
     const sort = req.query.sort || "createdAt";
-
     const order = req.query.order || "desc";
 
-    const searchTermsArray = searchTerm.split(/\s+/).filter(Boolean);
-    const regexSearchTerms = searchTermsArray.map(term => new RegExp(`\\b${term.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&")}\\b`, "i"));
-
-    const listings = await Listing.find({
-      $or: [
-        { name: { $in: regexSearchTerms } },
-        { address: { $in: regexSearchTerms } },
-        { postcode: { $in: regexSearchTerms } },
-      ],
+    let query = {
       offer,
       furnished,
       parking,
       type,
       approved: true,
-    })
+    };
+
+    if (searchTerm !== '') {
+      // If there is a search term, filter based on it
+      const searchTermsArray = searchTerm.split(/\s+/).filter(Boolean);
+      const regexSearchTerms = searchTermsArray.map(term => new RegExp(`\\b${term.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&")}\\b`, "i"));
+
+      query.$or = [
+        { name: { $in: regexSearchTerms } },
+        { address: { $in: regexSearchTerms } },
+        { postcode: { $in: regexSearchTerms } },
+      ];
+    }
+
+    const listings = await Listing.find(query)
       .sort({ [sort]: order })
       .limit(limit)
       .skip(startIndex);
@@ -158,6 +163,8 @@ export const getListings = async (req, res, next) => {
     next(error);
   }
 };
+
+
 
 
 
