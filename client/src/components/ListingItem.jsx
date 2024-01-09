@@ -18,7 +18,7 @@ export default function ListingItem({ listing }) {
                 "https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/Sales_Blog/real-estate-business-compressor.jpg?width=595&height=400&name=real-estate-business-compressor.jpg"
               }
               alt="listing cover"
-              className="md:w-[55%] w-full md:h-[320px] h-[250px] object-cover "
+              className="md:w-[55%] w-full md:h-fit h-[250px] object-cover "
             />
             <div className="flex items-center">
               <div className="md:py-10 px-4 pb-4 flex flex-col gap-4 w-full">
