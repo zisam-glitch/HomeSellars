@@ -177,7 +177,7 @@ export default function Footer() {
               alt=""
             />
           </div>
-          <div className="flex md:hidden pb-12  gap-6">
+          <div className="flex md:hidden pb-12 flex-col  gap-6">
             <p className="text-lg">
               © {(new Date().getFullYear())} DemiSellars Limited. All rights reserved.
             </p>
