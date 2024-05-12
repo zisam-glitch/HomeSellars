@@ -147,10 +147,10 @@ export default function Footer() {
               </ul>
             </div>
             <div className="md:flex hidden  gap-6">
-              <p className="text-lg">
-                © {(new Date().getFullYear())} DemiSellars. All rights reserved.Website Built By:
+              <p className="text-lg flex items-center gap-3">
+                © {(new Date().getFullYear())} DemiSellars. All rights reserved. Website Built By:
                 <a target="_blank" href="https://www.growwithsayed.com/">
-                  <img className="rounded-xl" src="https://www.pavdental.com/static/7663210cb239116c1e7b6f6322d91d97/dbb7e/IMG_20210907_002730_422.webp" alt="" />
+                  <img className="rounded-[50%]" src="https://www.pavdental.com/static/7663210cb239116c1e7b6f6322d91d97/dbb7e/IMG_20210907_002730_422.webp" alt="" />
                 </a>
               </p>
             </div>
@@ -181,6 +181,12 @@ export default function Footer() {
             <p className="text-lg">
               © {(new Date().getFullYear())} DemiSellars Limited. All rights reserved.
             </p>
+            <p className="text-lg flex items-center gap-3">
+              Website Built By:
+                <a target="_blank" href="https://www.growwithsayed.com/">
+                  <img className="rounded-[50%]" src="https://www.pavdental.com/static/7663210cb239116c1e7b6f6322d91d97/dbb7e/IMG_20210907_002730_422.webp" alt="" />
+                </a>
+              </p>
           </div>
           <div className="pb-12 text-sm">
             <p>
