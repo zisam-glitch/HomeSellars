@@ -148,37 +148,40 @@ export default function Footer() {
             </div>
             <div className="md:flex hidden  gap-6">
               <p className="text-lg">
-                © {(new Date().getFullYear())} DemiSellars Limited. All rights reserved.
+                © {(new Date().getFullYear())} DemiSellars. All rights reserved.Website Built By:
+                <a target="_blank" href="https://www.growwithsayed.com/">
+                  <img className="rounded-xl" src="https://www.pavdental.com/static/7663210cb239116c1e7b6f6322d91d97/dbb7e/IMG_20210907_002730_422.webp" alt="" />
+                </a>
               </p>
             </div>
           </div>
           <div className="gap-6 pb-12 md:hidden flex">
-              <img
-                src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066385/svgexport-12_meqsnc.svg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066275/svgexport-13_mnsjvl.svg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066302/svgexport-15_llonqj.svg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066316/svgexport-16_oo42ot.svg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066385/svgexport-17_kgx4oz.svg"
-                alt=""
-              />
-            </div>
-            <div className="flex md:hidden pb-12  gap-6">
-              <p className="text-lg">
-                © {(new Date().getFullYear())} DemiSellars Limited. All rights reserved.
-              </p>
-            </div>
+            <img
+              src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066385/svgexport-12_meqsnc.svg"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066275/svgexport-13_mnsjvl.svg"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066302/svgexport-15_llonqj.svg"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066316/svgexport-16_oo42ot.svg"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/db1i46uiv/image/upload/v1702066385/svgexport-17_kgx4oz.svg"
+              alt=""
+            />
+          </div>
+          <div className="flex md:hidden pb-12  gap-6">
+            <p className="text-lg">
+              © {(new Date().getFullYear())} DemiSellars Limited. All rights reserved.
+            </p>
+          </div>
           <div className="pb-12 text-sm">
             <p>
               Sold house prices provided by Land Registry/Registers of Scotland.
